@@ -10,6 +10,10 @@ import json
 import os as _os
 import argparse
 import wandb
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 from typing import List, Optional, Dict, Any, Callable
 from opentslm.time_series_datasets.TSQADataset import TSQADataset
 from opentslm.time_series_datasets.m4.M4QADataset import M4QADataset
